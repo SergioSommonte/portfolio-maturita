@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Maturità - Sergio Sommonte</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:#0b1020;color:#fff;scroll-behavior:smooth}
+header{position:fixed;top:0;width:100%;background:rgba(10,15,30,.95);backdrop-filter:blur(10px);padding:15px 30px;z-index:1000}
+nav{display:flex;justify-content:flex-end;gap:25px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;font-weight:600}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(135deg,#0b1020,#132347,#1d4ed8)}
+.hero h1{font-size:4rem}
+.hero p{font-size:1.3rem;margin-top:15px;max-width:800px}
+.btn{display:inline-block;margin-top:25px;padding:12px 24px;background:#3b82f6;border-radius:8px;color:#fff;text-decoration:none}
+section{padding:90px 8%}
+h2{font-size:2.2rem;margin-bottom:25px;color:#60a5fa}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:#111827;border:1px solid #334155;border-radius:15px;padding:25px;cursor:pointer;transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.content{display:none;margin-top:15px;color:#cbd5e1;line-height:1.6}
+.timeline{border-left:3px solid #3b82f6;padding-left:20px}
+.timeline div{margin-bottom:25px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.skill{background:#1e293b;padding:15px;border-radius:10px;text-align:center}
+footer{background:#111827;text-align:center;padding:30px}
+</style>
+<script>
+function toggle(id){
+ let e=document.getElementById(id);
+ e.style.display=e.style.display==='block'?'none':'block';
+}
+</script>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="#chi">Chi Sono</a>
+<a href="#capolavori">Capolavori</a>
+<a href="#percorso">Percorso</a>
+<a href="#materie">Materie</a>
+<a href="#competenze">Competenze</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Sergio Sommonte</h1>
+<p>Portfolio digitale per l'Esame di Stato - Indirizzo Informatica. Un percorso tra tecnologia, cittadinanza digitale, sicurezza informatica, reti e crescita personale.</p>
+<a class="btn" href="#capolavori">Esplora il Portfolio</a>
+</div>
+</section>
+
+<section id="chi">
+<h2>Chi Sono</h2>
+<p>Frequento l'indirizzo Informatica presso l'Istituto Antonio Pacinotti. Durante il mio percorso scolastico ho sviluppato competenze nei database, nelle reti informatiche, nella sicurezza informatica e nelle tecnologie web. Le attività di PCTO e il viaggio al Parlamento Europeo mi hanno permesso di ampliare la mia visione del mondo del lavoro e delle istituzioni europee.</p>
+</section>
+
+<section id="capolavori">
+<h2>Capolavori</h2>
+<div class="grid">
+
+<div class="card" onclick="toggle('pcto')">
+<h3>PCTO - Orientamento Professionale e Universitario</h3>
+<div id="pcto" class="content">
+Ho partecipato a incontri con Pentasoft, PROLIGHTS e Base Nautica Flavio Gioia. Ho osservato come software, reti e tecnologie digitali vengano utilizzati concretamente nelle aziende. L'esperienza mi ha aiutato a comprendere l'importanza del problem solving, del lavoro di squadra e dell'aggiornamento continuo nel settore informatico.
+</div>
+</div>
+
+<div class="card" onclick="toggle('bru')">
+<h3>Parlamento Europeo a Bruxelles</h3>
+<div id="bru" class="content">
+Ho visitato il Parlamento Europeo, il Parlamentarium e la Casa della Storia Europea. Questa esperienza mi ha permesso di comprendere il funzionamento delle istituzioni europee, il ruolo della cooperazione tra Stati e l'importanza della comunicazione istituzionale nella società moderna.
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="percorso">
+<h2>Percorso Interdisciplinare</h2>
+<div class="timeline">
+<div><strong>Capolavoro</strong> → punto di partenza del percorso.</div>
+<div><strong>Informatica</strong> → database, SQL, applicazioni web e sicurezza.</div>
+<div><strong>Sistemi e Reti</strong> → TCP/IP, DNS, DHCP, NAT, firewall e crittografia.</div>
+<div><strong>Educazione Civica</strong> → GDPR, cittadinanza digitale, Agenda 2030 e sicurezza.</div>
+<div><strong>Italiano</strong> → Luigi Pirandello e il tema dell'identità.</div>
+<div><strong>Inglese</strong> → Artificial Intelligence e impatto sulla società.</div>
+</div>
+</section>
+
+<section id="materie">
+<h2>Materie</h2>
+<div class="grid">
+
+<div class="card" onclick="toggle('inf')">
+<h3>Informatica</h3>
+<div id="inf" class="content">
+Studio dei database relazionali, modello ER, SQL, CRUD, JOIN, normalizzazione, architettura client-server, API, autenticazione, sessioni e sicurezza informatica. Approfondimento di SQL Injection, XSS e protezione dei dati.
+</div>
+</div>
+
+<div class="card" onclick="toggle('reti')">
+<h3>Sistemi e Reti</h3>
+<div id="reti" class="content">
+Modello TCP/IP, protocolli di rete, IPv4 e IPv6, subnetting, VLAN, routing, NAT, DNS, DHCP, firewall, VPN, HTTPS e crittografia. Studio della sicurezza delle reti e delle comunicazioni.
+</div>
+</div>
+
+<div class="card" onclick="toggle('civ')">
+<h3>Educazione Civica</h3>
+<div id="civ" class="content">
+Cittadinanza attiva, diritto di voto, Agenda 2030, Goal 16, GDPR europeo, firma digitale, pagamenti digitali, Big Data, sicurezza sul lavoro, primo soccorso e cittadinanza digitale.
+</div>
+</div>
+
+<div class="card" onclick="toggle('ita')">
+<h3>Italiano</h3>
+<div id="ita" class="content">
+Luigi Pirandello, la crisi dell'identità, le maschere sociali, il relativismo e il contrasto tra realtà e apparenza nelle opere principali dell'autore.
+</div>
+</div>
+
+<div class="card" onclick="toggle('ing')">
+<h3>Inglese</h3>
+<div id="ing" class="content">
+Artificial Intelligence, machine learning, cybersecurity, privacy, etica dell'IA, vantaggi e rischi delle nuove tecnologie nella società contemporanea.
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="competenze">
+<h2>Competenze</h2>
+<div class="skills">
+<div class="skill">Database & SQL</div>
+<div class="skill">Reti Informatiche</div>
+<div class="skill">Cybersecurity</div>
+<div class="skill">Cloud Computing</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Team Working</div>
+<div class="skill">Comunicazione</div>
+<div class="skill">Cittadinanza Digitale</div>
+</div>
+</section>
+
+<footer>
+Portfolio Esame di Stato - Sergio Sommonte
+</footer>
+
+</body>
+</html>
