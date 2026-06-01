@@ -10,9 +10,35 @@ body{font-family:Segoe UI,Arial,sans-serif;background:#0b1020;color:#fff;scroll-
 header{position:fixed;top:0;width:100%;background:rgba(10,15,30,.95);backdrop-filter:blur(10px);padding:15px 30px;z-index:1000}
 nav{display:flex;justify-content:flex-end;gap:25px;flex-wrap:wrap}
 nav a{color:#fff;text-decoration:none;font-weight:600}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(135deg,#0b1020,#132347,#1d4ed8)}
-.hero h1{font-size:4rem}
-.hero p{font-size:1.3rem;margin-top:15px;max-width:800px}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+
+background:
+linear-gradient(
+rgba(5,15,40,0.70),
+rgba(5,15,40,0.85)
+),
+url("bruxelles.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+.hero h1{
+font-size:5rem;
+text-shadow:0 0 20px rgba(0,0,0,.8);
+}
+.hero p{
+font-size:1.3rem;
+margin-top:15px;
+max-width:800px;
+text-shadow:0 0 10px rgba(0,0,0,.8);
+}
 .btn{display:inline-block;margin-top:25px;padding:12px 24px;background:#3b82f6;border-radius:8px;color:#fff;text-decoration:none}
 section{padding:90px 8%}
 h2{font-size:2.2rem;margin-bottom:25px;color:#60a5fa}
